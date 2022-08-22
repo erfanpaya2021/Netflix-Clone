@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,22 +7,33 @@
 /* html, body, heading */
 @layer base {
   body {
+    font-family: "Montserrat", sans-serif;
     @apply bg-[#141414] text-white;
   }
 
   header {
-    @apply fixed top-0 z-50 flex items-center justify-between px-4 py-4 w-full transition-all lg:py-6;
+    @apply fixed top-0 z-50 flex items-center justify-between px-4 py-4 w-full transition-all;
   }
 }
 
 /* custom classNames */
 @layer components {
   .headerLink {
-    @apply text-sm font-light text-[#e5e5e5] cursor-pointer;
-    @apply hover:text-[#b3b3b3];
+    @apply text-sm font-light text-gray-100 cursor-pointer;
+    @apply hover:text-gray-300;
   }
 
   .normalColorTransition {
     @apply transition duration-[400ms];
+  }
+
+  .bannerButton {
+    @apply flex items-center gap-x-2 px-5 py-1.5 text-sm font-semibold transition rounded;
+    @apply md:py-2.5 md:px-8 md:text-xl;
+    @apply hover:opacity-80;
+  }
+
+  .container {
+    @apply w-[90vw] max-w-[1280px] mx-auto;
   }
 }

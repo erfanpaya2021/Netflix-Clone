@@ -1,15 +1,9 @@
-import { SearchIcon, BellIcon } from "@heroicons/react/solid";
 import NetflixLogo from "@/public/netflix-logo.png";
 import AccountLogo from "@/public/account-logo.png";
 
 export const IMAGES = {
   NetflixLogo,
   AccountLogo,
-};
-
-export const SOLID_ICONS = {
-  SearchIcon,
-  BellIcon,
 };
 
 export const NAV_LINKS = [

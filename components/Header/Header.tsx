@@ -1,12 +1,11 @@
 import { FC, useState, useEffect } from "react";
 import Image from "next/image";
+import { SearchIcon, BellIcon } from "@heroicons/react/solid";
 
-import { IMAGES, SOLID_ICONS } from "@/constants/index";
+import { IMAGES } from "@/constants/index";
 
 import { Navbar } from "./Navbar";
 import Link from "next/link";
-
-const { SearchIcon, BellIcon } = SOLID_ICONS;
 
 export const Header: FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
